@@ -1,0 +1,218 @@
+.footer {
+  margin: 28px;
+  background: linear-gradient(90deg, #0dd0ba 0%, #2a86e5 100%);
+  border-radius: 40px;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+.card {
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+  background: var(--footer-card-bg);
+  padding: 30px 15px 21px;
+  border-radius: 20px;
+  min-width: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.cardTitle {
+  width: 200px;
+  height: 72px;
+  margin: 31px 0;
+}
+.cardsubTitle,
+.cardText {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  max-width: 291px;
+  color: var(--footer-cardText-color);
+}
+.cardsubTitle {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.cardText {
+  padding-right: 10px;
+}
+.cardList {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: var(--footer-cardList-margin);
+  width: 253px;
+}
+.logo {
+  width: 37px;
+  height: 37px;
+}
+.footerWrapperLink {
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+  padding-right: 68px;
+  justify-content: space-between;
+}
+.footerLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 748px;
+  margin-top: 50px;
+}
+.footerLinkTitle {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footerLink {
+  padding-top: 63px;
+  padding-left: 15px;
+}
+.footerLinkList {
+  padding-left: 0;
+  list-style-position: inside;
+}
+.footerLinkItem {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 3px;
+  padding: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::marker {
+    margin-right: 9px;
+  }
+}
+.footerCopy {
+  margin-bottom: 80px;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 0.5px;
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 160px 21px 28px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    margin: 30px;
+    justify-content: center;
+    padding-bottom: 27px;
+  }
+  .cardTitle {
+    margin: 4px 0;
+  }
+  .cardsubTitle {
+    margin-top: 26px;
+    margin-bottom: 12px;
+    width: auto;
+  }
+  .cardText {
+    max-width: 525px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .cardList {
+    margin: 28px 0 0;
+  }
+  .footerWrapperLink {
+    padding: 0 30px;
+  }
+  .footerLinks {
+    width: auto;
+    justify-content: space-between;
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+  }
+  .footerLink {
+    padding-top: 0;
+    padding-left: 0;
+    width: 190px;
+  }
+  .footerLinkTitle {
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+  .footerCopy {
+    margin-bottom: 41px;
+    padding-top: 30px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .footerLinkList {
+    list-style: none;
+  }
+  .footerLinkItem {
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer {
+    margin: 143px 15px 28px;
+  }
+  .card {
+    min-width: fit-content;
+    margin: 20px 20px 21px;
+  }
+  .cardTitle {
+    margin: 17px 0;
+  }
+  .cardsubTitle {
+    width: 253px;
+  }
+  .cardText {
+    max-width: 250px;
+    text-align: left;
+  }
+  .cardList {
+    margin-top: 22px;
+  }
+  .footerWrapperLink {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .footerLinks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerLink {
+    margin-bottom: 45px;
+  }
+  .footerLinkTitle {
+    margin-bottom: 7px;
+  }
+  .footerLinkItem {
+    margin-bottom: 0;
+  }
+  .footerCopy {
+    margin-bottom: 0;
+    padding-bottom: 21px;
+    margin-top: -19px;
+  }
+}

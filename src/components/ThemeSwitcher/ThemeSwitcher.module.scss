@@ -1,0 +1,30 @@
+.theme {
+  margin-left: 15px;
+  border-radius: 50px;
+  width: 54px;
+  height: 29px;
+  background: var(--header-button-color);
+  justify-content: var(--header-button-jsc);
+  display: flex;
+  padding: 0;
+  border: 0;
+  position: relative;
+}
+.themeImg {
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: var(--header-button-left);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .theme {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .theme {
+    margin-left: 92px;
+  }
+}

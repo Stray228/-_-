@@ -1,0 +1,80 @@
+:root {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+body {
+  background-color: #fcfcfc;
+  --bgcolor: #fff;
+  --header-button-color: #fff;
+  --header-button-left: 3px;
+  --logo-link: #2a86e5;
+  --placeholder-link: #757575;
+  --titleLeft: 120%;
+  --rating-bgcolor: #ebf6f5;
+  --input-bg: #eee;
+  --article-text-color: #707070;
+  --article-item-bg: #fff;
+  --article-item-bxshadow: 0 3px 16px 0 rgba(42, 134, 229, 0.08);
+  --article-info-color: #b3b3b1;
+  --footer-card-bg: #fff;
+  --footer-cardText-color: #0dd0ba;
+  --banner-img-height: 184px;
+  --header-main-mb: 44px;
+  --banner-left-pt: 28px;
+  --banner-wrapperLeft-pt: 23px;
+  --banner-infoLeft-mb: 47px;
+  --banner-right-pt: 56px;
+  --banner-wrapper-mb: 46px;
+  --article-infoItem-mb: 20px;
+  --section-wrapper-mb: 130px;
+  --footer-cardList-margin: 35px 0 0;
+}
+body.dark-theme {
+  background-color: #0e1219;
+  --bgcolor: #0e1219;
+  --header-button-color: #183a5d;
+  --header-button-left: 26px;
+  --logo-link: #0dd0ba;
+  --placeholder-link: #ffffff;
+  --titleLeft: 167%;
+  --rating-bgcolor: #183a5d;
+  --input-bg: #183a5d;
+  --article-text-color: #fff;
+  --article-item-bg: #202434;
+  --article-item-bxshadow: 0 3px 16px 0 rgba(0, 0, 0, 0.55);
+  --article-info-color: #fff;
+  --footer-card-bg: #202434;
+  --footer-cardText-color: #fff;
+  --banner-img-height: 168px;
+  --header-main-mb: 51px;
+  --banner-left-pt: 22px;
+  --banner-wrapperLeft-pt: 15px;
+  --banner-infoLeft-mb: 40px;
+  --banner-right-pt: 40px;
+  --banner-wrapper-mb: 55px;
+  --article-infoItem-mb: 46px;
+  --section-wrapper-mb: 96px;
+  --footer-cardList-margin: 28px 0 8px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 380px;
+  }
+}

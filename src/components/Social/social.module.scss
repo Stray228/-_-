@@ -1,0 +1,16 @@
+.social {
+  position: fixed;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 286px;
+  li:hover {
+    transform: scale(1.1);
+    transition: all 0.3 ease-in;
+  }
+}
+
+@media (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
